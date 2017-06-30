@@ -9,6 +9,8 @@ docker pull juliolustosa/alpine:3.6
 
 * Alpine Linux 3.6 as base system.
 * Non-Root User
+* Bash
+* Tzdata (Timezone data)
 
 ### The `deploy` user
 

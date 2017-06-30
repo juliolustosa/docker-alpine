@@ -4,8 +4,14 @@ MAINTAINER Julio Lustosa "contato@juliolustosa.com.br"
 # Set an environment variable
 ENV USER deploy
 
-# Update and upgrade packages   
+# Update and upgrade packages
 RUN apk update && apk upgrade
+
+# Install packages
+RUN apk add --no-cache \
+  bash \
+  curl \
+  tzdata
 
 # Copy scripts
 RUN mkdir /build-scripts
